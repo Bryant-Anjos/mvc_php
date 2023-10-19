@@ -31,8 +31,8 @@ class Model {
     }
   }
 
-  protected function query(string $sql) {
-    $statement = $this->connection->prepare($sql);
+  protected function query(string $sql, array $params = []): array {
+    $statement = $this->connection->prepare($sql, $params);
     $statement->execute();
     $statement->setFetchMode(PDO::FETCH_OBJ);
     $result = $statement->fetchAll();

@@ -6,6 +6,7 @@
   <title>Users</title>
 </head>
 <body>
+  <a href="create.php">Create User</a>
   <table>
     <thead>
       <tr>

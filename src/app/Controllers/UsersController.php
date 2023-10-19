@@ -17,4 +17,8 @@ class UsersController extends Controller {
       'users' => $params
     ]);
   }
+
+  public function create(): void {
+    $this->view('users/create');
+  }
 }
