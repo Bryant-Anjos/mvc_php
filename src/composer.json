@@ -10,5 +10,7 @@
       "name": "Bryant Moreira dos Anjos"
     }
   ],
-  "require": {}
+  "require": {
+    "robmorgan/phinx": "^0.15.2"
+  }
 }
