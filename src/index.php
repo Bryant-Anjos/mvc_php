@@ -2,8 +2,8 @@
 
 require_once 'vendor/autoload.php';
 
-use App\Controllers\User;
+use App\Controllers\UsersController;
 
-$user = new User();
+$usersController = new UsersController();
 
-echo $user->name;
+$usersController->index();
