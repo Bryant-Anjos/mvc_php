@@ -2,8 +2,9 @@
 
 require_once 'vendor/autoload.php';
 
+use App\Models\UsersModel;
 use App\Controllers\UsersController;
 
-$usersController = new UsersController();
-
+$usersModel = new UsersModel;
+$usersController = new UsersController($usersModel);
 $usersController->index();
