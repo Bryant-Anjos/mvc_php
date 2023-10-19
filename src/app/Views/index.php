@@ -18,7 +18,7 @@
     <tbody>
       <?php foreach($users as $key=>$user): ?>
         <tr>
-          <td><?= $key + 1; ?></td>
+          <td><?= (int) $key + 1; ?></td>
           <td><?= $user->id; ?></td>
           <td><?= $user->name; ?></td>
           <td><?= $user->email; ?></td>
